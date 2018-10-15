@@ -1,0 +1,48 @@
+h2{
+background-color: blue;
+
+
+}
+
+h1{
+background-color: lightgrey;
+
+
+}
+
+h3{
+background-color: fuchsia;
+
+
+}
+
+
+li > a
+{
+    color: white;
+}
+
+footer{
+
+    background-color: pink;
+
+}
+
+
+#ErsterAbschnitt
+{
+    background-color: grey;
+
+}
+
+#ZweiterAbschnitt
+{
+    background-color: black;
+
+}
+
+#DritterAbschnitt
+{
+
+background-color: yellow;
+}
