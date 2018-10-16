@@ -1,134 +1,364 @@
-<!doctype html>
-<meta charset="utf-8">
-    <head>
-        <link href="style.css" rel="stylesheet">
-        <title> BIOS - Eine Zweite Chance</title>
-         <link rel="stylesheet" href="css/bootstrap.min.css">
-         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-         <script src="js/bootstrap.min.js"></script>
-         <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
 
-        <section id="BannerHead">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="galerie.js"></script>
+    <link rel="stylesheet" href="galerie.css"/>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">
-<img src="logo.png" alt="ziege" />
-              </a>
 
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="kalender.html">Kalender</a>
-                    <li class="nav-item">
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="form1.html">Kontakt</a>
-                    </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="galerie.html">Galerie</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown
-                    </a>
-                  </li>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+    <title>BIOS - eine Zweite Chance </title>
+  </head>
+
+<body>
+
+<section>
+
+     <div class="container">
+            <div class="row">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="gallery-title">Galerie</h1>
+                </div>
+
+                <div class="ButtonBlock">
+                    <button class="btn btn-default filter-button" data-filter="all">Alle</button>
+                    <button class="btn btn-default filter-button" data-filter="hunde">Hunde</button>
+                    <button class="btn btn-default filter-button" data-filter="katzen">Katzen</button>
+                    <button class="btn btn-default filter-button" data-filter="nagetiere">Nagetiere</button>
+                    <button class="btn btn-default filter-button" data-filter="ziegen">Ziegen</button>
+
+                </div>
+                <br/>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6"></div>
+                                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6"></div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter hunde">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal1">
+                        <img src="Bilder/hund1.png" class="img-responsive"/>
+                        </button>
+                    </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="ModalLabel">Buster</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Mitte August erhielten wir einen Anruf, dass ein 9 jähriger Hund
+                        wegen Umzug abgegeben werden sollte. Wir sagten seine Aufnahme zu und
+                        so brachte man ihn uns am 17.08.18. Bei Aufnahme der Daten stellte sich
+                        allerdings heraus, dass der Rüde, den man seit Welpenalter hatte,
+                        nicht 9 sondern 12 Jahre alt ist. Wenn nun einer glaubt die Menschen,
+                        die Buster abgaben wären geknickt oder gar traurig gewesen, der täuscht sich.
+                        Es herrschte eine ganz saloppe Atmosphäre und verabschiedete sich mit den Worten:
+                        "Dann mache es mal gut, Buster!"
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
                   </div>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-              </div>
-            </nav>
+                </div>
 
-    </header>
+                    <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter katzen">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal2">
+                        <img src="Bilder/katze1.png" class="img-responsive"/>
+                    </button>
+                    </div>
 
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Spencer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              Spencer ist ein schüchterner kleiner Kater und versteckt sich noch sehr viel.
+                              Wenn man aber einfach ruhig sitzen bleibt, lässt er sich relativ schnell blicken,
+                              denn im Grunde ist er unheimlich neugierig. Mit Artgenossen kommt Spencer super klar.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-</section>
+                    <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter hunde">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal3">
+                        <img src="Bilder/hund2.png" class="img-responsive"/>
+                    </button>
+                    </div>
 
-<div class="container">
-<div class="row" backgroundColor="pink">
-    <ul class="thumbnails">
-        <li class="span2 backgroundColor="blue">
-          <div class="thumbnail">
-            <img src="http://placehold.it/320x200" alt="ALT NAME">
-            <div class="caption">
-              <h3>Header Name</h3>
-              <p>Description</p>
-              <p align="center"><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-            </div>
-          </div>
-        </li>
-          <li class="span4">
-          <div class="thumbnail">
-            <img src="http://placehold.it/320x200" alt="ALT NAME">
-            <div class="caption">
-              <h3>Header Name</h3>
-              <p>Description</p>
-              <p align="center"><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-            </div>
-          </div>
-        </li>
-          <li class="span4">
-          <div class="thumbnail">
-            <img src="http://placehold.it/320x200" alt="ALT NAME">
-            <div class="caption">
-              <h3>Header Name</h3>
-              <p>Description</p>
-              <p align="center"><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-            </div>
-          </div>
-        </li>
-        <li class="span4">
-          <div class="thumbnail">
-            <img src="http://placehold.it/320x200" alt="ALT NAME">
-            <div class="caption">
-              <h3>Header Name</h3>
-              <p>Description</p>
-              <p align="center"><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-            </div>
-          </div>
-        </li>
-          <li class="span4">
-            <div class="thumbnail">
-              <img src="http://placehold.it/320x200" alt="ALT NAME">
-              <div class="caption">
-                <h3>Header Name</h3>
-                <p>Description</p>
-                <p align="center"><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-              </div>
-            </div>
-          </li>
-          <li class="span4">
-            <div class="thumbnail">
-              <img src="http://placehold.it/320x200" alt="ALT NAME">
-              <div class="caption">
-                <h3>Header Name</h3>
-                <p>Description</p>
-                <p align="center"><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-              </div>
-            </div>
-          </li>
-    </ul>
-</div>
-</div>
-    </body>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">MBerti</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
 
-</htmL>
+                              Mischlingsrüde Berti ist am 19.11.15 geboren und wurde am 16.06.18 im Tierheim abgegeben,
+                              weil sein Frauchen mit ihm überfordert war und Berti wohl auch mit der Familie.
+                              Berti war stark auf sein Frauchen fixiert und kam immer weniger mit den Kindern klar.
+                              Man merkt Berti an, dass er recht unsicher ist und Halt bei einer Bezugsperson sucht.
+                              Bei fremden Personen braucht er etwas Zeit um Vertrauen zu fassen.
+                              Berti neigt dazu Resourcen - besonders Plätze wie seinen Schlafplatz - zu verteidigen.
+                              Je vertrauter jedoch ihm eine Person ist, desto eher duldet er es, wenn diese sich einem "verbotenen" Platz nähert.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter ziegen">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal4">
+                        <img src="Bilder/ziege1.png" class="img-responsive"/>
+                    </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Spencer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              Spencer ist ein schüchterner kleiner Kater und versteckt sich noch sehr viel.
+                              Wenn man aber einfach ruhig sitzen bleibt, lässt er sich relativ schnell blicken,
+                              denn im Grunde ist er unheimlich neugierig. Mit Artgenossen kommt Spencer super klar.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter nagetiere">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal5">
+                        <img src="Bilder/nagetier1.png" class="img-responsive"/>
+                    </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Spencer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              Spencer ist ein schüchterner kleiner Kater und versteckt sich noch sehr viel.
+                              Wenn man aber einfach ruhig sitzen bleibt, lässt er sich relativ schnell blicken,
+                              denn im Grunde ist er unheimlich neugierig. Mit Artgenossen kommt Spencer super klar.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter ziegen">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal6">
+                        <img src="Bilder/ziege2.png" class="img-responsive"/>
+                    </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Spencer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              Spencer ist ein schüchterner kleiner Kater und versteckt sich noch sehr viel.
+                              Wenn man aber einfach ruhig sitzen bleibt, lässt er sich relativ schnell blicken,
+                              denn im Grunde ist er unheimlich neugierig. Mit Artgenossen kommt Spencer super klar.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="galerieFeld col-lg-4 col-md-6 col-sm-4 col-xs-6 filter nagetiere">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal7">
+                        <img src="Bilder/nagetier2.png" class="img-responsive"/>
+                    </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Spencer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              Spencer ist ein schüchterner kleiner Kater und versteckt sich noch sehr viel.
+                              Wenn man aber einfach ruhig sitzen bleibt, lässt er sich relativ schnell blicken,
+                              denn im Grunde ist er unheimlich neugierig. Mit Artgenossen kommt Spencer super klar.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="galerieFeld col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ziegen">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal8">
+                        <img src="Bilder/ziege3.png" class="img-responsive"/>
+                    </button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Ritschi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              Ritschi ist in seiner nun vertrauten Umgebung total souverän und selbstsicher geworden.
+                              Besonders wenn es um leckeres Futter geht, ist Ritschi immer als Erster zur Stelle.
+                              Er ist auch unheimlich verspielt und unternehmungslustig.
+                              Die Neugierde lässt ihn auch schon mal jede Vorsicht vergessen,
+                              denn leichte Zurückhaltung legt er immer noch an den Tag.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="galerieFeld col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hunde">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal9">
+                        <img src="Bilder/hund3.png" class="img-responsive"/>
+                    </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal9" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Spencer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              Spencer ist ein schüchterner kleiner Kater und versteckt sich noch sehr viel.
+                              Wenn man aber einfach ruhig sitzen bleibt, lässt er sich relativ schnell blicken,
+                              denn im Grunde ist er unheimlich neugierig. Mit Artgenossen kommt Spencer super klar.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="galerieFeld col-lg-4 col-md-4 col-sm-4 col-xs-6 filter nagetiere">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal10">
+                        <img src="Bilder/nagetier3.png" class="img-responsive"/>
+                    </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal10" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Spencer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              Spencer ist ein schüchterner kleiner Kater und versteckt sich noch sehr viel.
+                              Wenn man aber einfach ruhig sitzen bleibt, lässt er sich relativ schnell blicken,
+                              denn im Grunde ist er unheimlich neugierig. Mit Artgenossen kommt Spencer super klar.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="galerieFeld col-lg-4 col-md-4 col-sm-4 col-xs-6 filter katzen">
+                        <button type="button" class="btn" data-toggle="modal" data-target="#Modal11">
+                        <img src="Bilder/katze2.png" class="img-responsive"/>
+                    </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal11" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Spencer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              Spencer ist ein schüchterner kleiner Kater und versteckt sich noch sehr viel.
+                              Wenn man aber einfach ruhig sitzen bleibt, lässt er sich relativ schnell blicken,
+                              denn im Grunde ist er unheimlich neugierig. Mit Artgenossen kommt Spencer super klar.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    </section>
+
+</body>
+</html>
