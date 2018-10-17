@@ -1,7 +1,5 @@
 
-
-
-.gallery-title
+.galerieTitel
 {
     font-size: 36px;
     color: white;
@@ -27,6 +25,9 @@
 
 }
 
+
+.platzhalter
+{}
 
 .btn
 {
