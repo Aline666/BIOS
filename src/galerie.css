@@ -4,7 +4,7 @@
     font-size: 36px;
     color: white;
     font-weight: 500;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     padding: 20px;
     background-color: green;
 }
@@ -29,6 +29,13 @@
 }
 
 
+.textBlock
+{
+    margin-bottom: 20px;
+    color: black;
+
+}
+
 .platzhalter
 {
 
@@ -48,12 +55,17 @@ padding: 0;
     background-color: #42B32F;
 
 }
+
 .btn-default:active .filter-button:active
 {
     background-color: #42B32F;
     color: white;
 }
 
+.filter-button:focus
+{
+    background-color: green;
+}
 
 
 .galerieFeld
