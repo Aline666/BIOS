@@ -1,0 +1,159 @@
+
+
+body {
+    font-family: sans-serif;
+    font-size: 15pt;
+
+    /* Damit der Footer quasi immer bis ganz nach unten geht */
+    background: white;
+    background-image: url("Bilder/hintergrund.jpg");
+
+
+}
+
+
+body, a, a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+h2{
+color: grey;
+
+}
+
+h4{
+color:grey;
+font-size: 15pt;
+
+}
+
+
+
+
+h3 {
+    font-size: 20pt;
+}
+
+.spendentext{
+font-style: oblique;
+font-size: 25pt;
+font-family: Roboto;
+
+
+}
+.jobtext{
+font-size: 12pt;
+border: 0px solid grey;
+border-top-width: 1px;
+}
+.btn
+{
+  border-style:none;
+}
+
+}
+#logo {
+    width: 5em;
+}
+
+
+
+#navbar {
+    background: grey;
+    font-size: 110%;
+    margin-bottom: 1em;
+    font-style: normal;
+}
+
+#navbar,
+#navbar a,
+#navbar a:visited,
+#navbar button {
+    color: grey;
+}
+
+
+#navbar .active {
+    font-weight: bold;
+}
+
+#carousel{
+max-width: 100%;
+margin-left: 1em;
+border: 1px solid darkgrey;
+height:30em;
+overflow: hidden;
+
+
+
+}
+
+section.team {
+
+    margin-top: 1em;
+    padding-top: 1em;
+
+    border: 0px solid grey;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    font-size: 12pt;
+    margin-left: 1em;
+
+
+}
+
+
+section.team h3{
+  color: darkgrey;
+    font-weight: bold;
+}
+
+section.team img{
+margin-right: 1em;
+margin-bottom: 1em;
+}
+
+
+
+
+#paypal {
+
+    width: 5em;
+
+
+
+
+
+}
+
+
+
+
+footer {
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+
+
+footer .bold {
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .col{
+
+  font-size: small;
+}

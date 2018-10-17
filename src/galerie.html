@@ -11,13 +11,54 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="galerie.js"></script>
     <link rel="stylesheet" href="galerie.css"/>
-
+<link rel="stylesheet" href="css/style.css" />
 
 
     <title>BIOS - eine Zweite Chance </title>
   </head>
 
 <body>
+    <header>
+
+      <!--Navbar-->
+      <section id="navbar">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="Bilder/logo.png" id="logo" alt="ziege" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="galerie.html">Galerie</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="formular.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kalender.html">Kalender</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="imperssum.html">Impressum</a>
+                </li>
+
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Suche nach etwas!" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        </section>
+  </header>
 
 <section>
 
@@ -361,6 +402,84 @@
                     </div>
                 </div>
     </section>
+
+    <footer>
+        <hr />
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <ul>
+                          <li class="bold">
+                              <a>Spenden</a>
+                          </li>
+                          <li>
+                              <a> <u>Spendenkonto:</u></a>
+                          </li>
+                          <li>
+                              <a> Musterbank Musterhausen </a></br>
+                              <a> IBAN DE11 2222 3333 4444 5555 66 </a>
+                          </li>
+                          <li>
+                              <a> <u>Spenden über Paypal:</u></a> </br>
+
+                                <input value="Spenden" onclick="popup=window.open('https://www.paypal.com/de/home')" type="button" />
+
+                          </li>
+
+                      </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul>
+                        <li class="bold">
+                            <a>Anfahrt</a>
+                        </li>
+
+                        <li>
+                            <a> Tierheim BIOS Musterhausen </a> </br>
+                            <a> Musterstraße 1 </a></br>
+                            <a> 12345 Musterstadt </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/Stadtwerke+Musterstadt/@50.9861834,6.8884554,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf30055a956aeb:0x157e75aff56dd5fc!8m2!3d50.98618!4d6.8906441"><u>Link zu Google Maps</u> </a>
+
+                        </li>
+
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                      <ul>
+                          <li class="bold">
+                              <a href="#">Infos</a>
+                          </li>
+                          <li>
+                              <a><u>Öffnungszeiten:</u></a> </br>
+                              <a> Montag bis Freitag: 13:30-17:30 Uhr </br>
+                                  Samstag: 10:00-12:00 Uhr</br>
+                                  Sonntag und an Feiertagen geschlossen!
+
+                                </a>
+                          </li>
+                          <li>
+                              <a><u>Gassigeh und Kuschelzeiten :</u></a> </br>
+                              <a> Montag bis Freitag: 11:30-18:30 Uhr </br>
+                                  Samstag: 10:00-18:00 Uhr</br>
+
+
+                                </a>
+                          </li>
+
+                      </ul>
+                  </div>
+
+              <div class="row">
+                  <div class="col">
+
+                          © Tierheim BIOS
+
+                  </div>
+              </div>
+          </div>
+      </footer>
 
 </body>
 </html>
