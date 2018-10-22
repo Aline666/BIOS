@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"  />
+        <title>BIOS - Eine zweite Chance</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Eigene Stylesheets -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="img/logo.png" />
+        <link rel="stylesheet" href="form.css" />
+    </head>
+    <body>
+        <!-- Navigationsleiste -->
+
+        <!-- Seiteninhalt -->
+        <h1>Kontaktformular</h1>
+        <form method="POST" action="form.php">
+        <?php include("form.php"); ?>
+        <div> <?php include 'form.php' ?> </div>
+
+            <!-- Name -->
+            <label for ="name">
+                Ihr Name:
+                <span class="required">*</span>
+            </label>
+            <div class="side-by-side">
+                <input type="text" name="firstname" id="name" placeholder="Vorname" />
+                <input type="text" name="lastname" id="name" placeholder="Nachname" />
+            </div>
+
+            <!-- E-Mail -->
+            <label for="email">
+                <a href="#" class="tooltip">Ihre E-Mail:<span>Pflichtfeld</span></a>
+                <span class="required">*</span>
+            </label>
+            <input type="email" name="email" id="email" />
+
+            <!-- Betreff -->
+            <label for="subject">
+                Betreff:
+            </label>
+            <select name="subject">
+                <option selected="selected">Allgemeine Anfrage</option>
+                <option>Mitarbeit und Kooperation</option>
+                <option>Lebensmittel- und Spielzeugspende</option>
+                <option>Adoption und Patenschaft</option>
+            </select>
+
+            <!-- Nachricht -->
+            <label for="message">
+                Ihre Nachricht:
+                <span class="required">*</span>
+            </label>
+            <textarea name="message" id="message" rows="4"></textarea>
+
+            <!-- Button zum Absenden -->
+            <input type="submit" value="Nachricht senden" />
+        </form>
+    </body>
+</html>

@@ -1,4 +1,3 @@
-/** Formular *//
 /*
  * Allgemeine Angaben
  */
@@ -99,4 +98,30 @@ input[type="submit"]:hover {
 
 #result.okay {
     color: darkgreen;
+}
+
+/*
+ * Text via Mouseover
+ */
+ a.tooltip
+{
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+a.tooltip span
+{
+  display: none;
+}
+
+a.tooltip:hover span
+{
+  position: absolute;
+  display: block;
+  top: 1.5em;
+  left: 2em;
+  border: 1px solid black;
+  background-color:white;
+  padding: 0.2em;
 }

@@ -11,13 +11,13 @@ let validateForm = event => {
     // Vorname muss vorhanden sein
     if (form.firstname.value == "") {
         okay = false;
-        message += "Der Vorname fehlt. "<br />;
+        message += "Geben Sie bitte Ihren Vornamen ein. <br />";
     }
 
     // Nachname muss vorhanden sein
     if (form.lastname.value == "") {
         okay = false;
-        message += "Der Nachname fehlt. <br />";
+        message += "Geben Sie bitte Ihren Nachnamen ein. <br />";
     }
 
     // E-Mail muss vorhanden sein und zusätzlich ein @ enthalten
@@ -25,13 +25,13 @@ let validateForm = event => {
     // Ausdruck zu prüfen. Einfach mal nach „E-Mail Regex” googlen …
     if (form.email.value == "" || !form.email.value.includes("@")) {
         okay = false;
-        message += "Ungültige Mailadresse. <br />";
+        message += "Geben Sie bitte eine gültige E-Mailadresse ein. <br />";
     }
 
     // Eine Nachricht muss vorhanden sein
     if (form.message.value == "") {
         okay = false;
-        message += "Das Nachricht Feld darf nicht leer bleiben. <br />";
+        message += "Geben Sie bitte eine Nachricht ein. <br />";
     }
 
     // Ergebnis anzeigen
