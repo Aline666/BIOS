@@ -103,19 +103,19 @@ input[type="submit"]:hover {
 /*
  * Text via Mouseover
  */
- a.tooltip
+ a.tooltip2
 {
   position: relative;
   text-decoration: none;
   color: black;
 }
 
-a.tooltip span
+a.tooltip2 span
 {
   display: none;
 }
 
-a.tooltip:hover span
+a.tooltip2:hover span
 {
   position: absolute;
   display: block;
