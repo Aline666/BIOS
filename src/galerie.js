@@ -31,6 +31,7 @@ $(this).addClass("active");
 
 /**Button top **/
 $(document).ready(function(){
+
       $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> Back to Top</div>');
     	$(window).scroll(function () {
 			if ($(this).scrollTop() != 0) {
