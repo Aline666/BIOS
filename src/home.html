@@ -6,13 +6,16 @@
         <meta charset="utf-8">
           <!-- Bootstrap -->
          <link rel="stylesheet" href="css/bootstrap.min.css">
-
-         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+         <script src="js/jquery-1.10.2.js"></script>
+         <script src="js/jquery-3.3.1.slim.min.js"></script>
+         <script src="js/popper.min.js"></script>
+         <script src="javascript.js"></script>
          <script src="js/bootstrap.min.js"></script>
 
          <!--Stylesheet-->
          <link href="css/style.css" rel="stylesheet">
+
+         <link rel="stylesheet" href="css/style.css" />
 
     </head>
 
@@ -53,7 +56,7 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                   <input class="form-control mr-sm-2" type="search" placeholder="Suche nach etwas!" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  <button class="btn-navbar btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
               </div>
             </nav>
@@ -73,16 +76,20 @@
                         <li data-target="#carousel" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel" data-slide-to="1"></li>
                         <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
                   </ol>
                   <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="Bilder/Timmy.jpg" alt="First slide">
+                          <img class="d-block w-100" src="Bilder/Welpen.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="Bilder/Platzhalter.jpeg" alt="Second slide">
+                          <img class="d-block w-100" src="Bilder/Hasen.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="Bilder/Platzhalter.jpeg" alt="Third slide">
+                          <img class="d-block w-100" src="Bilder/katzen.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="Bilder/Ziege.jpg" alt="Forth slide">
                         </div>
                   </div>
 
@@ -114,18 +121,25 @@
 
                   </div>
                 </section>
-            </div>
+
+                <!--Einzelvorstellung-->
+
+
+</div>
 
             <!--Spalte2 sidebar-->
-          <div class="col-md-2">
+          <div class="sidebar col-md-2">
 
             <div class="spendentext">
 
               Unsere Tiere brauchen dich!</br>
 
             </div>
-            <h4> </br> Spende via  <a href="https://www.paypal.com/de/home"><u>Paypal</u> </a> und direkt an unsere Tiere!</h4>
+            <h4> </br> Spende via  Paypal und direkt an unsere Tiere!</h4>
+
+            <a href="https://www.paypal.com/de/home">
             <img id="paypal" src="Bilder/logo_paypal.jpg" alt="paypal" />
+          </a>
           </br>
           </br>
 
@@ -135,15 +149,165 @@
           </br>
             Du hast Interesse an einem Job oder einer Ausbildung? </br>
             Wir freuen uns über deine Online-Bewerbung an <u>tierheim.bios@web.de</u>
+          </br>
+        </br>
+          </div>
+
+          <div class="facebook">
+
+
+					         <div class="Facebook">
+
+						                   <div class="fb-text">
+							                        Folge uns auch auf Facebook, damit du keine News verpasst!
+                                    </br>
+						                   </div>
+
+						                    <a href="https://de-de.facebook.com">
+                                <img id="facebook" src="Bilder/Facebook.png" alt="Facebook-Link"/>
+
+                                </a>
+
+					              </div>
+
           </div>
 
           </div>
-        </div>
-        </div>
+
+          <!--Galerie Zeile 2-->
+          <div class="row">
+            <div class="container-team col-md-12">
+                  <div class="row" id="Einzelvorstellung">
+                    Wir stellen uns vor:
+
+                      </div>
+                      <div class="row">
+
+
+
+                      <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Alle</button>
+                        <button class="btn" onclick="filterSelection('Leiter')"> Leitung</button>
+                        <button class="btn" onclick="filterSelection('Mitarbeiter')"> Mitarbeiter</button>
+                        <button class="btn" onclick="filterSelection('Azubi')"> Azubis</button>
+                        <button class="btn" onclick="filterSelection('Verwaltung')"> Verwaltung</button>
+                        <button class="btn" onclick="filterSelection('Aushilfe')"> Aushilfen</button>
+                      </div>
+                  </div>
+
+<!-- Portfolio Gallery Grid -->
+                    <div class="row">
+                      <div class="column Leiter">
+                        <div class="content">
+                          <img src="Bilder/Leiterin.jpg" alt="Leiterin1" style="height:10em; width: 7em;">
+                          <hr/>
+                         <h4>Maxine Musterfrau</h4>
+                         <p>Unsere Tierheimleitung. </p>
+                       </div>
+                     </div>
+
+
+                     <div class="column Leiter">
+                   <div class="content">
+                     <img src="Bilder/Leiterin2.jpg" alt="Leiterin2" style="height:10em; width: 7em;">
+                     <hr/>
+                     <h4>Carla Columna</h4>
+                      <p>Wenn unsere Maxine mal nicht vor Ort sein sollte oder Unterstützung benötigt ist Carla stehts zur stelle.</p>
+                   </div>
+                 </div>
+
+
+                 <div class="column Mitarbeiter">
+                   <div class="content">
+                     <img src="Bilder/Mitarbeiter.jpg" alt="Mitarbeter1" style="height:10em; width: 7em;">
+                     <hr/>
+                     <h4>Michael Müller</h4>
+                      <p>Wir sind sehr stolz auf unseren langjährigsten Mitarbeiter Michael!</p>
+                    </div>
+                  </div>
+
+                  <div class="column Mitarbeiter">
+                    <div class="content">
+                      <img src="Bilder/Mitarbeiter2.png" alt="Mitarbeiter2" style="height:10em; width: 7em;">
+                      <hr/>
+                      <h4>Klaus Knast</h4>
+                       <p>Klaus ist das neueste Mitglied unseres Teams.</p>
+                     </div>
+                   </div>
+
+                   <div class="column Mitarbeiter">
+                     <div class="content">
+                       <img src="Bilder/Mitarbeiter3.png" alt="Mitarbeiter3" style="height:10em; width: 7em;">
+                       <hr/>
+                       <h4>Tim Titanic</h4>
+                        <p>Tim ist unser Katzen und Hundeflüsterer.</p>
+                      </div>
+                    </div>
+
+
+
+
+                    <div class="column Azubi">
+                      <div class="content">
+                        <img src="Bilder/Azubi.jpg" alt="Azubi1" style="height: 10em; width: 7em;">
+                        <hr/>
+                        <h4>Titus Tier</h4>
+                        <p>Unser Azubi Titus ist schon im dritten Lehrjahr. </p>
+                      </div>
+                    </div>
+
+                    <div class="column Azubi">
+                      <div class="content">
+                        <img src="Bilder/Azubi2.jpg" alt="Azubi2" style="height: 10em; width: 7em;">
+                        <hr/>
+                        <h4>Herbert Hund</h4>
+                        <p>Herbert hat gerade seine Ausbildung als Tierpfleger begonnen. </p>
+                      </div>
+                    </div>
+
+
+                    <div class="column Verwaltung">
+                      <div class="content">
+                        <img src="Bilder/Verwaltung.jpg" alt="Verwaltung1" style="height: 10em; width: 7em;">
+                        <hr/>
+                        <h4>Bert Bilanz</h4>
+                        <p>Bert managed unser Büro. </p>
+                      </div>
+                    </div>
+
+                    <div class="column Verwaltung">
+                      <div class="content">
+                        <img src="Bilder/Verwaltung2.jpg" alt="Verwaltung2" style="height: 10em; width: 7em;">
+                        <hr/>
+                        <h4>Claus Computer</h4>
+                        <p>Claus ist unser IT-Spezialist. </p>
+                      </div>
+                    </div>
+
+
+                    <div class="column Aushilfe">
+                      <div class="content">
+                        <img src="Bilder/Aushilfe.png" alt="Aushilfe" style="height: 10em; width: 7em;">
+                        <hr/>
+                        <h4>Hans Helfer</h4>
+                        <p>Hans ist immer zur Stelle, wenn wir Unterstützung gebrauchen können. </p>
+                      </div>
+                    </div>
+
+<!-- END GRID -->
+          </div>
+
+              </div>
+                </div>
+
+                </div>
+
+
 
     </main>
 
     <footer>
+      <hr/>
               <div class="container">
                   <div class="row">
                       <div class="col-md-4">
@@ -202,8 +366,6 @@
                                   <a><u>Gassigeh und Kuschelzeiten :</u></a> </br>
                                   <a> Montag bis Freitag: 11:30-18:30 Uhr </br>
                                       Samstag: 10:00-18:00 Uhr</br>
-
-
                                     </a>
                               </li>
 
