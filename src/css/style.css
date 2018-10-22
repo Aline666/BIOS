@@ -29,13 +29,15 @@ font-size: 13pt;
 h4{
 color:grey;
 font-size: 15pt;
+font-weight: lighter;
 
 }
 
 h3 {
-    font-size: 25pt;
+    font-size: 28pt;
     color: darkgrey;
     font-weight: bold;
+    font-family: 'Amatic SC', cursive;
 
 }
 
@@ -110,7 +112,7 @@ margin-bottom: 1em;
 
 
 .sidebar {
-  background-color: hsla(120, 60%, 70%, 0.2);
+  background-color: hsla(120, 60%, 70%, 0.1);
   border-radius: 10px;
 }
 
@@ -118,13 +120,15 @@ margin-bottom: 1em;
 font-size: 12pt;
 border: 0px solid grey;
 border-top-width: 1px;
+
+
 }
 
 
 .spendentext{
 font-style: oblique;
-font-size: 25pt;
-font-family: Roboto;
+font-size: 28pt;
+font-family: 'Amatic SC', cursive;
 
 }
 
@@ -195,10 +199,11 @@ width: 2.5em
 }
 #Einzelvorstellung {
 
-  font-size: 25pt;
+  font-size: 28pt;
   color: darkgrey;
   font-weight: bold;
   margin-left: 1em;
+  font-family: 'Amatic SC', cursive;
 }
 
 /* Clear floats after rows */
@@ -218,12 +223,7 @@ width: 2.5em
 font-weight: bold;
 }
 
-.content img{
 
-margin-left: 2.5em;
-
-
-}
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -239,18 +239,39 @@ margin-left: 2.5em;
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
-  margin-left: 3em;
+  margin-left: 2em;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20pt;
+  border: 1px solid grey;
 }
 
 /* Add a grey background color on mouse-over */
-.btn:hover {
-  background-color: #ddd;
+.btn:hover{
+  background-color: lightgrey;
 }
 
 /* Add a dark background color to the active button */
-.btn.active {
-  background-color: #666;
+/*.btn:active {
+
    color: white;
+}*/
+.btn:focus{
+background-color: green;
+
+
+}
+
+.Menschen{
+margin-left: 1em;
+}
+.Menschen img{
+margin-left: 3.5em;
+border-radius: 10px;
+
+}
+.Menschen h4{
+text-align: center;
+
 }
 
 

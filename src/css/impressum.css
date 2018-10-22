@@ -1,0 +1,170 @@
+body {
+    font-family: sans-serif;
+    font-size: 15pt;
+    /* Damit der Footer quasi immer bis ganz nach unten geht */
+
+}
+
+
+body, a, a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+h1{
+  color: grey;
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+
+
+
+}
+
+h2{
+color: grey;
+font-size: 18pt;
+font-weight: lighter;
+
+
+}
+
+h3 {
+    font-size: 15pt;
+    color: grey;
+    text-decoration: underline;
+
+}
+
+
+h4{
+color:grey;
+font-size: 12pt;
+
+}
+
+
+
+
+#navbar {
+    background: grey;
+    font-size: 110%;
+    margin-bottom: 1em;
+    font-style: normal;
+}
+
+#navbar,
+#navbar a,
+#navbar a:visited,
+#navbar button {
+    color: grey;
+}
+
+
+#navbar .active {
+    font-weight: bold;
+}
+
+.btn-navbar{
+  border-style:none;
+  border-radius: 10px;
+}
+.btn-navbar:hover, .btn-navbar:active, .btn-navbar.active, .btn-navbar.disabled, .btn-navbar[disabled] {
+    background-color:hsla(120, 60%, 70%, 0.3);
+
+}
+
+
+#logo {
+    width: 5em;
+}
+
+
+.sidebar {
+  background-color: hsla(120, 60%, 70%, 0.1);
+  border-radius: 10px;
+}
+
+.jobtext{
+font-size: 12pt;
+border: 0px solid grey;
+border-top-width: 1px;
+}
+
+
+.spendentext{
+font-style: oblique;
+font-size: 28pt;
+font-family: 'Amatic SC', cursive;
+
+
+}
+
+#paypal {
+    margin-left: 1.5em;
+
+    border-radius: 10px;
+    width: 4em;
+}
+
+#paypal:hover{
+width: 4.5em;
+
+}
+
+
+
+.fb-text{
+  font-size: 10pt;
+
+}
+
+#facebook{
+  margin-left: 3em;
+  border-radius: 10px;
+  width: 2em;
+
+}
+
+#facebook:hover{
+width: 2.5em
+
+
+}
+
+
+
+
+.impressum{
+
+text-align: center;
+
+}
+
+
+footer {
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+
+
+footer .bold {
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .col{
+
+  font-size: small;
+}
