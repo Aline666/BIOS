@@ -21,8 +21,6 @@ let validateForm = event => {
     }
 
     // E-Mail muss vorhanden sein und zusätzlich ein @ enthalten
-    // HINWEIS: Besser wäre es, die E-Mailadresse mit einem regulären
-    // Ausdruck zu prüfen. Einfach mal nach „E-Mail Regex” googlen …
     if (form.email.value == "" || !form.email.value.includes("@")) {
         okay = false;
         message += "Geben Sie bitte eine gültige E-Mailadresse ein. <br />";

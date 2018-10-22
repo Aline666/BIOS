@@ -1,6 +1,13 @@
-﻿<?php mail('nastasiarahel@aol.com',
-$_POST['name'],
-$_POST['message'],
-$_POST['email']);
+<?php
+$recipient = "nastasiarahel@aol.com";
+$fmtResponse = implode("", file(response.htt));
+$fmtMail= implode("", file("mail.htt"));
+foreach($_POST as $key=> $val) {
+  $fmtResponse= str_replace("<$key>", $val, $fmtResponse);
+  $fmtMail= str_replace("<$key>", $val, $fmtMail);
+}
+if ($_POST["access"] == "irregeheim") {
+  mail($recipient, $_POST["subject"], $fmtMail);
+}
+echo $fmtResponse;
 ?>
-<p>Vielen Dank! Ihre E-Mail wurde versendet. Wir treten in Kürze mit Ihnen in Kontakt.</p>

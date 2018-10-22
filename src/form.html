@@ -15,15 +15,19 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="img/logo.png" />
         <link rel="stylesheet" href="form.css" />
+
+        <!-- JS einbinden -->
+        <script src="form.js"></script>
     </head>
     <body>
         <!-- Navigationsleiste -->
 
         <!-- Seiteninhalt -->
         <h1>Kontaktformular</h1>
-        <form method="POST" action="form.php">
-        <?php include("form.php"); ?>
-        <div> <?php include 'form.php' ?> </div>
+        <form
+            onsubmit = "validateForm(event)"
+            method="POST"
+            action="form.php">
 
             <!-- Name -->
             <label for ="name">
@@ -53,15 +57,21 @@
                 <option>Adoption und Patenschaft</option>
             </select>
 
+            <!-- super geheimes Feld für super Safetyness -->
+            <input type="hidden" name="access" value="irregeheim">
+
             <!-- Nachricht -->
             <label for="message">
                 <a href="#" class="tooltip2">Ihre Nachricht:<span>Pflichtfeld</span></a>
                 <span class="required">*</span>
             </label>
-            <textarea name="message" id="message" rows="4"></textarea>
+            <textarea name="message" id="message"></textarea>
 
             <!-- Button zum Absenden -->
             <input type="submit" value="Nachricht senden" />
+
+            <!-- Hier wird das Ergebnis der Prüfung angezeigt -->
+            <div id="result"></div>
         </form>
     </body>
 </html>
