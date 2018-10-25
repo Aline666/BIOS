@@ -1,7 +1,10 @@
 ﻿Hallo, aus dem Kontaktformular kam folgende Eingabe:
 
+Name:
 <firstname> <lastname>
 
+Betreff:
 <subject>
 
+Nachricht:
 <message>

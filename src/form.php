@@ -1,6 +1,6 @@
 <?php
 
-$recipient = "maximilian.stefanac@googlemail.com";
+$recipient = "nastasiarahel@aol.com";
 $fmtResponse = implode("", file("response.htt"));
 $fmtMail= implode("", file("mail.htt"));
 
