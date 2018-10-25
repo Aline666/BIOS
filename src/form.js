@@ -45,7 +45,7 @@ let validateForm = event => {
     resultElement.innerHTML = message;
 
     // Formular nicht abschicken
-    //if (!okay) {
-    event.preventDefault();
-    //}
+    if (!okay) {
+        event.preventDefault();
+    }
 }

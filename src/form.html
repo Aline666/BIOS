@@ -25,9 +25,10 @@
         <!-- Seiteninhalt -->
         <h1>Kontaktformular</h1>
         <form
-            onsubmit = "validateForm(event)"
             method="POST"
-            action="form.php">
+            action="form.php"
+            onsubmit="validateForm"
+			>
 
             <!-- Name -->
             <label for ="name">
@@ -35,7 +36,7 @@
                 <span class="required">*</span>
             </label>
             <div class="side-by-side">
-                <input type="text" name="firstname" id="name" placeholder="Vorname" />
+                <input type="text" name="firstname" id="name" placeholder="Vorname"/>
                 <input type="text" name="lastname" id="name" placeholder="Nachname" />
             </div>
 
