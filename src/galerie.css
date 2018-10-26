@@ -1,4 +1,5 @@
-.galerieTitel {
+.galerieTitel
+{
     font-size: 36px;
     color: white;
     font-weight: 500;
@@ -7,7 +8,8 @@
     background-color: green;
 }
 
-.filter-button {
+.filter-button
+{
     font-size: 18px;
     color: white;
     background-color: darkgrey;
@@ -16,10 +18,17 @@
     margin-left: 5px;
 }
 
-.ButtonBlock > .btn {
+.ButtonBlock > .btn
+{
     margin-left: 15px;
     padding: 10px;
     border-radius: 0;
+}
+
+.titel
+{
+    padding: 0;
+    margin: 0;
 }
 
 .textBlock {
@@ -29,11 +38,16 @@
 
 .platzhalter {}
 
-.btn {
+/**Standardeinstellung zurücksetzen**/
+.btn
+{
     padding: 0;
 }
 
-#toTop {
+
+/**Button um wieder an den Seitenanfang zu gelangen **/
+#toTop
+{
     position: fixed;
     background-color: #42B32F;
     bottom: 10px;
@@ -44,33 +58,28 @@
     display: none;
 }
 
-h5 {
+h5
+{
     font-family: 'Indie Flower', cursive;
     font-size: 24pt;
     font-weight: bold;
 }
 
-.filter-button:hover {
+.filter-button:hover
+{
     font-size: 18px;
     border: 1px solid #42B32F;
     color: #ffffff;
     background-color: #42B32F;
 }
 
-.btn-default:active {
-    background-color: #42B32F;
-    color: white;
-}
 
-.filter-button-active {
+.filter-button-active
+{
     background-color: green;
 }
 
-.nav-item > .active {
-    background-color: green;
-    color: green;
-}
-
-.galerieFeld {
+.galerieFeld
+{
     margin-bottom: 15px;
 }
