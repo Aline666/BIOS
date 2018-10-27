@@ -1,6 +1,4 @@
-/*
- * Allgemeine Angaben
- */
+/* Allgemeine Angaben */
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
@@ -8,12 +6,11 @@ html {
     font-size: 12pt;
 }
 
-/*
- * Basis-Layout des Formulars
- */
+/* Basis-Layout des Formulars */
 form {
-    max-width: 30em;
+    max-width: 30em; /* Größe des Formlarfeldes */
 
+    /* Rahmen des Formularfeldes */
     border: 1px solid #d0d0d0;
     background: #f0f0f0;
     padding: 1em;
@@ -38,9 +35,7 @@ form > .side-by-side > *:last-child {
     margin-right: 0;
 }
 
-/*
- * Gestaltung der Feldbezeichner
- */
+/* Gestaltung der Feldbezeichner */
 form label {
     font-weight: bold;
     margin-top: 1em;
@@ -54,9 +49,7 @@ form label .required {
     color: darkred;
 }
 
-/*
- * Gestaltung der Formularfelder
- */
+/* Gestaltung der Formularfelder */
 input,
 textarea,
 select {
@@ -70,27 +63,23 @@ textarea {
     height: 12em;
 }
 
-/*
- * Der Button zum Abschicken des Formulars
- */
+/* Der Button zum Abschicken des Formulars */
 input[type="submit"] {
-    margin-top: 2em;
-    width: auto;
+    margin-top: 2em; /* Abstand zum oberen Element */
+    width: auto; /* Breite an Inhalt angepasst */
 
     background-color: #147704;
     color: white;
     font-weight: bold;
 
-    transition: background-color 0.2s;
+    transition: background-color 0.2s; /* Übergangszeit */
 }
 
 input[type="submit"]:hover {
-    background-color: #289716;
+    background-color: #289716; /* Übergangsfarbe */
 }
 
-/*
- * Element mit dem Prüfergebnis
- */
+/* Element mit dem Prüfergebnis */
 #result {
     margin-top: 1em;
     color: red;
@@ -100,29 +89,24 @@ input[type="submit"]:hover {
     color: darkgreen;
 }
 
-/*
- * Text via Mouseover
- */
- a.tooltip2
-{
-  position: relative;
-  text-decoration: none;
-  color: #darkgrey;
+/* Text via Mouseover */
+a.tooltip2 { /* Einstellungen für den immer sichtbaren Text, z.B. "Ihr Name" */
+    position: relative;
+    text-decoration: none;
+    color: #darkgrey;
 }
 
-a.tooltip2 span
-{
-  display: none;
+a.tooltip2 span { /* Einstelleungen für den nicht immer sichtbaren Text (nur bei Mouseover) */
+    display: none;
 }
 
-a.tooltip2:hover span
-{
-  position: absolute;
-  display: block;
-  top: 1.5em;
-  left: 2em;
-  border: 1px solid black;
-  color: black;
-  background-color:white;
-  padding: 0.2em;
+a.tooltip2:hover span { /* Einstellungen für das Erscheinen des Hovertextes */
+    position: absolute;
+    display: block;
+    top: 1.5em;
+    left: 2em;
+    border: 1px solid black;
+    color: black;
+    background-color:white;
+    padding: 0.2em;
 }
