@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"  />
-        <title>BIOS - Eine zweite Chance</title>
+        <title>BIOS - Eine zweite Chance</title> <!-- Webseitentitel (im Tab zu sehen) -->
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
@@ -12,44 +12,46 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Eigene Stylesheets -->
-        <link rel="icon" href="Bilder/index.png" />
-        <link rel="stylesheet" href="form.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="Bilder/logo.png" /> <!-- Logo als Webseiten-Icon festgelegt (im Tab zu sehen) -->
 
-        <!-- JS einbinden -->
+        <link rel="stylesheet" href="form.css" /> <!-- Stylesheet für das Formular -->
+        <link rel="stylesheet" href="style.css" /> <!-- Stylesheet für Navbar und Footer -->
+
+        <!-- JS für Aktionen des Formulars einbinden -->
         <script src="form.js"></script>
     </head>
-    <body>
 
+    <body>
         <!-- Navigationsleiste -->
         <section id="navbar">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- helle Navbar festgelegt -->
                 <a class="navbar-brand" href="#">
-                    <img src="Bilder/logo.png" id="logo" alt="ziege" />
+                    <img src="Bilder/logo.png" id="logo" alt="Ziege" /> <!-- Logo festgelegt -->
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Reiter -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="home.html">Home</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="galerie.html">Galerie</a>
                         </li>
+
                         <li class="nav-item active">
                             <a class="nav-link" href="form.html">Kontakt<span class="sr-only">(current)</span></a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="Impressum.html">Impressum</a>
                         </li>
-
                     </ul>
-
                 </div>
             </nav>
         </section>
@@ -64,11 +66,12 @@
 
             <!-- Name -->
             <label for ="name">
-                <a href="#" class="tooltip2">Ihr Name:<span>Pflichtfeld</span></a>
-                <span class="required">*</span>
+                <a href="#" class="tooltip2">Ihr Name:<span>Pflichtfeld</span></a> <!-- Erstellung eines Hovertextes durch einen Link -->
+                <span class="required">*</span> <!-- Festlegen als Pflichtfeld -->
             </label>
-            <div class="side-by-side">
-                <input type="text" name="firstname" id="name" placeholder="Vorname"/>
+
+            <div class="side-by-side"> <!-- Eingabefelder für Vorname und Nachname stehen nebeneinander -->
+                <input type="text" name="firstname" id="name" placeholder="Vorname"/> <!-- Festlegen eines Eingabefeldes -->
                 <input type="text" name="lastname" id="name" placeholder="Nachname" />
             </div>
 
@@ -77,12 +80,15 @@
                 <a href="#" class="tooltip2">Ihre E-Mail:<span>Pflichtfeld</span></a>
                 <span class="required">*</span>
             </label>
+
             <input type="email" name="email" id="email" />
 
             <!-- Betreff -->
             <label for="subject">
                 Betreff:
             </label>
+
+            <!-- Auswahlliste der Betreffthemen -->
             <select name="subject">
                 <option selected="selected">Allgemeine Anfrage</option>
                 <option>Mitarbeit und Kooperation</option>
@@ -98,7 +104,8 @@
                 <a href="#" class="tooltip2">Ihre Nachricht:<span>Pflichtfeld</span></a>
                 <span class="required">*</span>
             </label>
-            <textarea name="message" id="message"></textarea>
+
+            <textarea name="message" id="message"></textarea> <!-- Festlegen eines Textfeldes -->
 
             <!-- Button zum Absenden -->
             <input type="submit" value="Nachricht senden" />
@@ -133,7 +140,7 @@
 
                             <li>
                                 <a> <u>Spenden über Paypal:</u></a> </br>
-                                <input value="Spenden" onclick="popup=window.open('https://www.paypal.com/de/home')" type="button" />
+                                <input value="Spenden" onclick="popup=window.open('https://www.paypal.com/de/home')" type="button" id="donate" />
                             </li>
                         </ul>
                     </div>
@@ -150,6 +157,7 @@
                                 <a> Musterstraße 1 </a></br>
                                 <a> 12345 Musterstadt </a>
                             </li>
+
                             <li>
                                 <a href="https://www.google.com/maps/place/Stadtwerke+Musterstadt/@50.9861834,6.8884554,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf30055a956aeb:0x157e75aff56dd5fc!8m2!3d50.98618!4d6.8906441"><u>Link zu Google Maps</u> </a>
                             </li>
@@ -183,7 +191,7 @@
                     <!-- UNTEN Copyright -->
                     <div class="row">
                         <div class="col">
-                            © Tierheim BIOS
+                            © 2018 - Tierheim BIOS
                         </div>
                     </div>
                 </div>
