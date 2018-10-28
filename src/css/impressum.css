@@ -6,14 +6,11 @@ body {
 }
 
 
-body, a, a:visited {
-    color: grey;
-}
-
 a:hover {
     color: white;
     text-decoration: underline;
 }
+
 h1{
   color: grey;
   font-size: 30pt;
@@ -115,8 +112,6 @@ width: 4.5em;
 
 }
 
-
-
 .fb-text{
   font-size: 10pt;
 
@@ -134,8 +129,6 @@ width: 2.5em
 
 
 }
-
-
 
 
 .impressum{
