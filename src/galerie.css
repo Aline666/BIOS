@@ -83,3 +83,18 @@ h5
 {
     margin-bottom: 15px;
 }
+
+#donate{
+    margin-top: 0.5em;
+    width: auto;
+
+    background-color: #147704;
+    color: white;
+    font-weight: bold;
+
+    transition: background-color 0.2s;
+}
+
+#donate:hover{
+    background-color: #289716;
+}
