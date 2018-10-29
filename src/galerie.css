@@ -44,6 +44,12 @@
     padding: 0;
 }
 
+.btnClose
+{
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+}
 
 /**Button um wieder an den Seitenanfang zu gelangen **/
 #toTop
@@ -72,6 +78,17 @@ h5
     color: #ffffff;
     background-color: #42B32F;
 }
+
+.linkBtn
+{
+    padding: 5px;
+    background-color: #147704;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+
+}
+
 
 
 .filter-button-active

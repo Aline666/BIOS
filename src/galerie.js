@@ -1,4 +1,3 @@
-
 /**Galerie Filteroption Bilder ein/ausblenden**/
 $(document).ready(function(){
     $(".filter-button").click(function(){
@@ -22,6 +21,7 @@ $(this).addClass("active");
 });
 
 
+
 /**Button top **/
 $(document).ready(function(){
       $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> Back to Top</div>');
@@ -35,5 +35,7 @@ $(document).ready(function(){
     $('#toTop').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
+
+
     });
 });
