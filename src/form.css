@@ -1,4 +1,4 @@
-/* Allgemeine Angaben */
+/* Angaben zur Schrift */
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
@@ -6,57 +6,68 @@ html {
     font-size: 12pt;
 }
 
+
+/* Seiteninhalt zentrieren und max. Größe von 900px festlegen */
 .mitte {
     margin: 0 auto;
     max-width: 900px;
 }
 
+
 /* Basis-Layout des Formulars */
 form {
-    max-width: 100%; /* Größe des Formularfeldes angepasst an den Titel */
-
+    /* Größe des Formularfeldes angepasst an den Titel */
+	max-width: 100%;
     /* Rahmen des Formularfeldes */
     border: 1px solid #d0d0d0;
     background: #f0f0f0;
     padding: 1em;
 }
 
+
+/* CSS für Vorname und Nachname (nebeneinander) */
+input#nachname {
+	max-width: 49%; /* verkleinert das Feld relativ, so dass eine kleine Lücke zwischen den Eingabefeldern ist */
+	position: relative;
+	float: left; /* linksbündig */
+}
+
+input#vorname {
+	max-width: 49%;
+	position: relative;
+	float: right; /* rechtsbündig */
+}
+
+
+/* Gestaltung der Formulardarstellung */
 form > *,
 form > .side-by-side > * {
     display: block;
     box-sizing: border-box;
-    width: 100%;
-}
-/* Felder für Vorname und Nachname sollen nicht mehr nebeneinander stehen,
-   da sie nicht dem responsive Webdesign schmeicheln
-form > .side-by-side {
-    display: flex;
-    max-width: 100%;
+	width: 100%;
 }
 
-form > .side-by-side > * {
-    margin-right: 0.25em;
-}
-*/
-
-/* Name untereinander statt nebeneinander */
-form > .side-by-side > *:last-child {
-    margin-top: 0.25em;
-}
 
 /* Gestaltung der Feldbezeichner */
 form label {
     font-weight: bold;
     margin-top: 1em;
+	float: left;
+	position: relative;
 }
 
+
+/* Abstand vom ersten Element zum oberen Rahmen */
 form label:first-child {
     margin-top: 0;
 }
 
+
+/* Dunkelrot für * */
 form label .required {
     color: darkred;
 }
+
 
 /* Gestaltung der Formularfelder */
 input,
@@ -71,6 +82,7 @@ select {
 textarea {
     height: 12em;
 }
+
 
 /* Der Button zum Abschicken des Formulars */
 input[type="submit"] {
@@ -89,6 +101,7 @@ input[type="submit"]:hover {
     background-color: #289716; /* Übergangsfarbe */
 }
 
+
 /* Element mit dem Prüfergebnis */
 #result {
     margin-top: 1em;
@@ -99,11 +112,13 @@ input[type="submit"]:hover {
     color: darkgreen;
 }
 
+
 /* Text via Mouseover */
 a.tooltip2 { /* Einstellungen für den immer sichtbaren Text, z.B. "Ihr Name" */
     position: relative;
     text-decoration: none;
     color: #darkgrey;
+    z-index: 5; /* Ebene im Vordergrund */
 }
 
 a.tooltip2 span { /* Einstelleungen für den nicht immer sichtbaren Text (nur bei Mouseover) */
@@ -120,6 +135,7 @@ a.tooltip2:hover span { /* Einstellungen für das Erscheinen des Hovertextes */
     background-color:white;
     padding: 0.2em;
 }
+
 
 /* Titel ans Corporate Design angepasst */
 .titel {
