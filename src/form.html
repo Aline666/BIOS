@@ -12,7 +12,7 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
 
         <!-- Eigene Stylesheets -->
-        <link rel="icon" href="Bilder/logo.png" /> <!-- Logo als Webseiten-Icon festgelegt (im Tab zu sehen) -->
+        <link rel="icon" href="Bilder/logo_ohne_bios.png"/> <!-- Logo als Webseiten-Icon festgelegt (im Tab zu sehen) -->
 
         <link rel="stylesheet" href="form.css" /> <!-- Stylesheet für das Formular -->
         <link rel="stylesheet" href="style.css" /> <!-- Stylesheet für Navbar und Footer -->
@@ -44,6 +44,7 @@
                             <a class="nav-link" href="galerie.html">Galerie</a>
                         </li>
 
+                        <!-- aktiver Reiter -->
                         <li class="nav-item active">
                             <a class="nav-link" href="form.html">Kontakt<span class="sr-only">(current)</span></a>
                         </li>
@@ -57,62 +58,69 @@
         </section>
 
         <!-- Seiteninhalt -->
-        <h1>Kontaktformular</h1>
-        <form
-            method="POST"
-            action="form.php"
-            onsubmit="validateForm"
-			>
-
-            <!-- Name -->
-            <label for ="name">
-                <a href="#" class="tooltip2">Ihr Name:<span>Pflichtfeld</span></a> <!-- Erstellung eines Hovertextes durch einen Link -->
-                <span class="required">*</span> <!-- Festlegen als Pflichtfeld -->
-            </label>
-
-            <div class="side-by-side"> <!-- Eingabefelder für Vorname und Nachname stehen nebeneinander -->
-                <input type="text" name="firstname" id="name" placeholder="Vorname"/> <!-- Festlegen eines Eingabefeldes -->
-                <input type="text" name="lastname" id="name" placeholder="Nachname" />
+        <div class="mitte">
+            <!-- Titel -->
+            <div class="titel col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1>Kontaktformular</h1>
             </div>
 
-            <!-- E-Mail -->
-            <label for="email">
-                <a href="#" class="tooltip2">Ihre E-Mail:<span>Pflichtfeld</span></a>
-                <span class="required">*</span>
-            </label>
+            <!-- Kontaktformular -->
+            <form
+                method="POST"
+                action="form.php"
+                onsubmit="validateForm"
+    			>
 
-            <input type="email" name="email" id="email" />
+                <!-- Name -->
+                <label for ="name">
+                    <a href="#" class="tooltip2">Ihr Name:<span>Pflichtfeld</span></a> <!-- Erstellung eines Hovertextes durch einen Link -->
+                    <span class="required">*</span> <!-- Festlegen als Pflichtfeld -->
+                </label>
 
-            <!-- Betreff -->
-            <label for="subject">
-                Betreff:
-            </label>
+                <div class="side-by-side" > <!-- Eingabefelder für Vorname und Nachname stehen nebeneinander -->
+                    <input type="text" name="firstname" id="name" placeholder="Vorname"/> <!-- Festlegen eines Eingabefeldes -->
+                    <input type="text" name="lastname" id="name" placeholder="Nachname" />
+                </div>
 
-            <!-- Auswahlliste der Betreffthemen -->
-            <select name="subject">
-                <option selected="selected">Allgemeine Anfrage</option>
-                <option>Mitarbeit und Kooperation</option>
-                <option>Lebensmittel- und Spielzeugspende</option>
-                <option>Adoption und Patenschaft</option>
-            </select>
+                <!-- E-Mail -->
+                <label for="email">
+                    <a href="#" class="tooltip2">Ihre E-Mail:<span>Pflichtfeld</span></a>
+                    <span class="required">*</span>
+                </label>
 
-            <!-- super geheimes Feld für super Safetyness -->
-            <input type="hidden" name="access" value="irregeheim">
+                <input type="email" name="email" id="email" />
 
-            <!-- Nachricht -->
-            <label for="message">
-                <a href="#" class="tooltip2">Ihre Nachricht:<span>Pflichtfeld</span></a>
-                <span class="required">*</span>
-            </label>
+                <!-- Betreff -->
+                <label for="subject">
+                    Betreff:
+                </label>
 
-            <textarea name="message" id="message"></textarea> <!-- Festlegen eines Textfeldes -->
+                <!-- Auswahlliste der Betreffthemen -->
+                <select name="subject">
+                    <option selected="selected">Allgemeine Anfrage</option>
+                    <option>Mitarbeit und Kooperation</option>
+                    <option>Lebensmittel- und Spielzeugspende</option>
+                    <option>Adoption und Patenschaft</option>
+                </select>
 
-            <!-- Button zum Absenden -->
-            <input type="submit" value="Nachricht senden" />
+                <!-- super geheimes Feld für super Safetyness -->
+                <input type="hidden" name="access" value="irregeheim">
 
-            <!-- Hier wird das Ergebnis der Prüfung angezeigt (ist nicht aktiv, da es eine Dankesseite gibt)-->
-            <div id="result"></div>
-        </form>
+                <!-- Nachricht -->
+                <label for="message">
+                    <a href="#" class="tooltip2">Ihre Nachricht:<span>Pflichtfeld</span></a>
+                    <span class="required">*</span>
+                </label>
+
+                <textarea name="message" id="message"></textarea> <!-- Festlegen eines Textfeldes -->
+
+                <!-- Button zum Absenden -->
+                <input type="submit" value="Nachricht senden" />
+
+                <!-- Hier wird das Ergebnis der Prüfung angezeigt (ist nicht aktiv, da es eine Dankesseite gibt)-->
+                <div id="result"></div>
+            </form>
+        </div>
 
         <!-- Footer -->
         <footer>

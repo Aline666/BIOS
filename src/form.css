@@ -6,9 +6,14 @@ html {
     font-size: 12pt;
 }
 
+.mitte {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
 /* Basis-Layout des Formulars */
 form {
-    max-width: 30em; /* Größe des Formlarfeldes */
+    max-width: 100%; /* Größe des Formularfeldes angepasst an den Titel */
 
     /* Rahmen des Formularfeldes */
     border: 1px solid #d0d0d0;
@@ -22,17 +27,21 @@ form > .side-by-side > * {
     box-sizing: border-box;
     width: 100%;
 }
-
+/* Felder für Vorname und Nachname sollen nicht mehr nebeneinander stehen,
+   da sie nicht dem responsive Webdesign schmeicheln
 form > .side-by-side {
     display: flex;
+    max-width: 100%;
 }
 
 form > .side-by-side > * {
     margin-right: 0.25em;
 }
+*/
 
+/* Name untereinander statt nebeneinander */
 form > .side-by-side > *:last-child {
-    margin-right: 0;
+    margin-top: 0.25em;
 }
 
 /* Gestaltung der Feldbezeichner */
@@ -67,6 +76,7 @@ textarea {
 input[type="submit"] {
     margin-top: 2em; /* Abstand zum oberen Element */
     width: auto; /* Breite an Inhalt angepasst */
+    max-width: 100%; /* Button ist maximal so groß wie der Rahmen des Formulars */
 
     background-color: #147704;
     color: white;
@@ -109,4 +119,15 @@ a.tooltip2:hover span { /* Einstellungen für das Erscheinen des Hovertextes */
     color: black;
     background-color:white;
     padding: 0.2em;
+}
+
+/* Titel ans Corporate Design angepasst */
+.titel {
+    font-size: 36px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: green;
+    padding-top: 25px;
 }

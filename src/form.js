@@ -1,4 +1,4 @@
-/**
+/*
  * Funktion zur Überprüfung des Kontaktformulars. Wird beim Abschicken des
  * Formulars aufgerufen.
  */
