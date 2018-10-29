@@ -44,8 +44,7 @@ font-size: 12pt;
 }
 
 
-
-
+/*Navbar*/
 #navbar {
     background: grey;
     font-size: 110%;
@@ -79,6 +78,7 @@ font-size: 12pt;
     width: 5em;
 }
 
+/*Sidebar*/
 
 .sidebar {
   background-color: hsla(120, 60%, 70%, 0.1);
@@ -130,6 +130,7 @@ width: 2.5em
 
 }
 
+/*Imperssum*/
 
 .impressum{
 
@@ -137,6 +138,7 @@ text-align: center;
 
 }
 
+/*Footer*/
 
 footer {
     font-size: small;
@@ -160,4 +162,19 @@ footer ul {
 footer .col{
 
   font-size: small;
+}
+
+#donate{
+    margin-top: 0.5em;
+    width: auto;
+
+    background-color: #147704;
+    color: white;
+    font-weight: bold;
+
+    transition: background-color 0.2s;
+}
+
+#donate:hover{
+    background-color: #289716;
 }
