@@ -1,3 +1,8 @@
+.galerieFeld
+{
+    margin-bottom: 15px;
+}
+
 .galerieTitel
 {
     font-size: 36px;
@@ -18,11 +23,46 @@
     margin-left: 5px;
 }
 
+.btnClose
+{
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.linkBtn
+{
+    padding: 5px;
+    background-color: #147704;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.filter-button-active
+{
+    background-color: green;
+}
+
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    color: #ffffff;
+    background-color: #42B32F;
+}
+
 .ButtonBlock > .btn
 {
     margin-left: 15px;
     padding: 10px;
     border-radius: 0;
+}
+
+/**Standardeinstellung zurücksetzen**/
+.btn
+{
+    padding: 0;
 }
 
 .titel
@@ -38,16 +78,10 @@
 
 .platzhalter {}
 
-/**Standardeinstellung zurücksetzen**/
-.btn
+h5
 {
-    padding: 0;
-}
-
-.btnClose
-{
-    padding: 5px;
-    width: 100%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 24pt;
     font-weight: bold;
 }
 
@@ -64,43 +98,6 @@
     display: none;
 }
 
-h5
-{
-    font-family: 'Indie Flower', cursive;
-    font-size: 24pt;
-    font-weight: bold;
-}
-
-.filter-button:hover
-{
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    color: #ffffff;
-    background-color: #42B32F;
-}
-
-.linkBtn
-{
-    padding: 5px;
-    background-color: #147704;
-    color: white;
-    font-weight: bold;
-    width: 100%;
-
-}
-
-
-
-.filter-button-active
-{
-    background-color: green;
-}
-
-.galerieFeld
-{
-    margin-bottom: 15px;
-}
-
 #donate{
     margin-top: 0.5em;
     width: auto;
@@ -115,3 +112,14 @@ h5
 #donate:hover{
     background-color: #289716;
 }
+
+/**
+
+@media screen and (max-width: 500px)
+{
+    .galerieFeld
+    {
+        margin-right: 10px;px;
+    }
+}
+**/
