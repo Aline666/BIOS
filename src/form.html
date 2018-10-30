@@ -73,16 +73,18 @@
                 action="form.php"
                 onsubmit="validateForm"
     			>
+                <!-- Browser sendet HTTP-Anfrage an form.php -->
+                <!-- Daten werden auf die Art "POST" übertragen -->
 
                 <!-- Name -->
-                <label for ="name">
+                <label for ="name"> <!-- label und for definieren Feldbezeichner (für Screen Reader wichtig) -->
                     <a href="#" class="tooltip2">Ihr Name:<span>Pflichtfeld</span></a> <!-- Erstellung eines Hovertextes durch einen Link -->
                     <span class="required">*</span> <!-- Festlegen als Pflichtfeld -->
                 </label>
 
                 <div class="side-by-side" > <!-- Eingabefelder für Vorname und Nachname stehen nebeneinander -->
                     <input type="text" name="firstname" id="vorname" placeholder="Vorname"/> <!-- Festlegen eines Eingabefeldes -->
-                    <input type="text" name="lastname" id="nachname" placeholder="Nachname" />
+                    <input type="text" name="lastname" id="nachname" placeholder="Nachname" /> <!-- input=Eingabefeld, type=Art der Daten, die das Feld versteht -->
                 </div>
 
                 <!-- E-Mail -->
