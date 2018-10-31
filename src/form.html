@@ -8,17 +8,17 @@
         <title>BIOS - Eine zweite Chance</title> <!-- Webseitentitel (im Tab zu sehen) -->
 
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
         <!-- Eigene Stylesheets -->
         <link rel="icon" href="Bilder/logo_ohne_bios.png"/> <!-- Logo als Webseiten-Icon festgelegt (im Tab zu sehen) -->
 
         <link rel="stylesheet" href="form.css" /> <!-- Stylesheet für das Formular -->
-        <link rel="stylesheet" href="style.css" /> <!-- Stylesheet für Navbar und Footer -->
+        <link rel="stylesheet" href="css/style.css" /> <!-- Stylesheet für Navbar und Footer -->
 
         <!-- JS für Aktionen des Formulars einbinden -->
         <script src="form.js"></script>
@@ -28,7 +28,7 @@
         <!-- Navigationsleiste -->
         <section id="navbar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- helle Navbar festgelegt -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand">
                     <img src="Bilder/logo.png" id="logo" alt="Ziege" /> <!-- Logo festgelegt -->
                 </a>
 
@@ -40,7 +40,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="home.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -69,10 +69,10 @@
 
             <!-- Kontaktformular -->
             <form
-                method="POST"
-                action="form.php"
-                onsubmit="validateForm"
-    			>
+                onsubmit = "validateForm(event)"
+                action   = "form.php"
+                method   = "POST"
+            >
                 <!-- Browser sendet HTTP-Anfrage an form.php -->
                 <!-- Daten werden auf die Art "POST" übertragen -->
 
@@ -121,10 +121,10 @@
 
                 <!-- Button zum Absenden -->
                 <input type="submit" value="Nachricht senden" />
-
-                <!-- Hier wird das Ergebnis der Prüfung angezeigt (ist nicht aktiv, da es eine Dankesseite gibt)-->
-                <div id="result"></div>
             </form>
+
+            <!-- Hier wird das Ergebnis der Prüfung angezeigt -->
+            <div id="result"></div>
         </div>
 
         <!-- Footer -->
