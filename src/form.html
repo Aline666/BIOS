@@ -69,10 +69,10 @@
 
             <!-- Kontaktformular -->
             <form
-                method="POST"
-                action="form.php"
-                onsubmit="validateForm"
-    			>
+                onsubmit = "validateForm(event)"
+                action   = "form.php"
+                method   = "POST"
+            >
                 <!-- Browser sendet HTTP-Anfrage an form.php -->
                 <!-- Daten werden auf die Art "POST" übertragen -->
 
@@ -121,10 +121,10 @@
 
                 <!-- Button zum Absenden -->
                 <input type="submit" value="Nachricht senden" />
-
-                <!-- Hier wird das Ergebnis der Prüfung angezeigt (ist nicht aktiv, da es eine Dankesseite gibt)-->
-                <div id="result"></div>
             </form>
+
+            <!-- Hier wird das Ergebnis der Prüfung angezeigt -->
+            <div id="result"></div>
         </div>
 
         <!-- Footer -->

@@ -1,7 +1,4 @@
-/** Formular *//
-/*
- * Allgemeine Angaben
- */
+/* Angaben zur Schrift */
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
@@ -9,55 +6,70 @@ html {
     font-size: 12pt;
 }
 
-/*
- * Basis-Layout des Formulars
- */
-form {
-    max-width: 30em;
 
+/* Seiteninhalt zentrieren und max. Größe von 900px festlegen */
+.mitte {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+
+/* Basis-Layout des Formulars */
+form {
+    /* Größe des Formularfeldes angepasst an den Titel */
+	max-width: 100%;
+    /* Rahmen des Formularfeldes */
     border: 1px solid #d0d0d0;
     background: #f0f0f0;
     padding: 1em;
 }
 
+
+/* CSS für Vorname und Nachname (nebeneinander) */
+input#nachname {
+	max-width: 49%; /* verkleinert das Feld relativ, so dass eine kleine Lücke zwischen den Eingabefeldern ist */
+	position: relative;
+	float: left; /* linksbündig */
+}
+
+input#vorname {
+	max-width: 49%;
+	position: relative;
+	float: right; /* rechtsbündig */
+}
+
+
+/* Gestaltung der Formulardarstellung */
 form > *,
 form > .side-by-side > * {
     display: block;
     box-sizing: border-box;
-    width: 100%;
+	width: 100%;
 }
 
-form > .side-by-side {
-    display: flex;
-}
 
-form > .side-by-side > * {
-    margin-right: 0.25em;
-}
-
-form > .side-by-side > *:last-child {
-    margin-right: 0;
-}
-
-/*
- * Gestaltung der Feldbezeichner
- */
+/* Gestaltung der Feldbezeichner */
 form label {
     font-weight: bold;
     margin-top: 1em;
+	float: left;
+	position: relative;
 }
 
+
+/* Abstand vom ersten Element zum oberen Rahmen */
 form label:first-child {
     margin-top: 0;
 }
 
+
+/* Dunkelrot für * */
 form label .required {
     color: darkred;
 }
 
-/*
- * Gestaltung der Formularfelder
- */
+
+/* Gestaltung der Formularfelder */
 input,
 textarea,
 select {
@@ -71,27 +83,26 @@ textarea {
     height: 12em;
 }
 
-/*
- * Der Button zum Abschicken des Formulars
- */
-input[type="submit"] {
-    margin-top: 2em;
-    width: auto;
 
-    background-color: #0958A7;
+/* Der Button zum Abschicken des Formulars */
+input[type="submit"] {
+    margin-top: 2em; /* Abstand zum oberen Element */
+    width: auto; /* Breite an Inhalt angepasst */
+    max-width: 100%; /* Button ist maximal so groß wie der Rahmen des Formulars */
+
+    background-color: #147704;
     color: white;
     font-weight: bold;
 
-    transition: background-color 0.2s;
+    transition: background-color 0.2s; /* Übergangszeit */
 }
 
 input[type="submit"]:hover {
-    background-color: #2868A8;
+    background-color: #289716; /* Übergangsfarbe */
 }
 
-/*
- * Element mit dem Prüfergebnis
- */
+
+/* Element mit dem Prüfergebnis */
 #result {
     margin-top: 1em;
     color: red;
@@ -99,4 +110,40 @@ input[type="submit"]:hover {
 
 #result.okay {
     color: darkgreen;
+}
+
+
+/* Text via Mouseover */
+a.tooltip2 { /* Einstellungen für den immer sichtbaren Text, z.B. "Ihr Name" */
+    position: relative;
+    text-decoration: none;
+    color: #darkgrey;
+    z-index: 5; /* Ebene im Vordergrund */
+}
+
+a.tooltip2 span { /* Einstelleungen für den nicht immer sichtbaren Text (nur bei Mouseover) */
+    display: none;
+}
+
+a.tooltip2:hover span { /* Einstellungen für das Erscheinen des Hovertextes */
+    position: absolute;
+    display: block;
+    top: 1.5em;
+    left: 2em;
+    border: 1px solid black;
+    color: black;
+    background-color:white;
+    padding: 0.2em;
+}
+
+
+/* Titel ans Corporate Design angepasst */
+.titel {
+    font-size: 36px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: green;
+    padding-top: 25px;
 }

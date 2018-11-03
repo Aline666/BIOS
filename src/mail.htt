@@ -1,0 +1,13 @@
+﻿Hallo, aus dem Kontaktformular kam folgende Eingabe:
+
+Name:
+<firstname> <lastname>
+
+E-Mail Adresse:
+<email>
+
+Betreff:
+<subject>
+
+Nachricht:
+<message>
