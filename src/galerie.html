@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Schriftart von Google Fonts eingebunden-->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="galerie.js"></script>
+    <link rel="stylesheet" href="galerie.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>BIOS - eine Zweite Chance </title>
+    <link rel="icon" href="Bilder/logo_ohne_bios.png"/>
+</head>
+<body>
+
+    <header>
+
+                <!--Navbar-->
+                <section id="navbar">
+
+                      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand">
+                                <img src="Bilder/logo.png" id="logo" alt="ziege" />
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav mr-auto">
+                                      <li class="nav-item ">
+                                          <a class="nav-link" href="home.html">Home </a>
+                                      </li>
+                                      <li class="nav-item active">
+                                          <a class="nav-link" href="galerie.html">Galerie<span class="sr-only">(current)</span></a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="form.html">Kontakt</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="Impressum.html">Impressum</a>
+                                      </li>
+
+                                  </ul>
+
+                          </div>
+                  </nav>
+              </section>
+        </header>
+    <section>
+
+        <div class="container">
+            <div class="row">
+
+                <!-- Titel mit Hintergrundfarbe über die Seitenbreite -->
+                <div class="titel col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="galerieTitel">Galerie</h1>
+                </div>
+
+                <!-- Textblock über die komplette Seitenbreite -->
+
+                <div class="textBlock col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    Lieber Besucher,
+                    </br>
+                    </br> Sie möchten einem Tier ein neues Zu Hause geben? dann sind sie hier genau richtig! In unserer Galerie haben Sie die Möglickeit unsere aktuellen Bewohner näher kennen zu lernen und sich zu verlieben! Gerne können Sie Ihren neuen Liebling auch persönlich kennenlernen, hierfür kontaktieren Sie uns Bitte telefonisch oder über unser praktisches Kontaktformular!
+                    </br> Wir freuen uns auf Ihren Besuch!
+                    </br>
+                    </br>
+                    <h5>Ihr Tierheim-Team </h5>
+                </div>
+
+                <!-- Button mit Filterfunktion, Alle vorgewählt, data-filter= Filter der Galeriebilder -->
+                <div class="ButtonBlock">
+                    <button class="btn filter-button filter-button-active" data-filter="all">Alle</button>
+                    <button class="btn filter-button" data-filter="hunde">Hunde</button>
+                    <button class="btn filter-button" data-filter="katzen">Katzen</button>
+                    <button class="btn filter-button" data-filter="nagetiere">Nagetiere</button>
+                    <button class="btn filter-button" data-filter="ziegen">Ziegen</button>
+                </div>
+                </br>
+
+                 <!-- Platzhalter zwischen ButtonBlock und Galeriebeginn -->
+                <div class="platzhalter col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                </div>
+
+                <!-- Beginn des ersten Bilds mit einem hinterlegten Button für das Popup-->
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter hunde">
+                     <!-- data-toggle für das öffnen des pop ups, data-target zur zweisung mit dem fenster-->
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal1">
+                        <!-- Beginn des ersten Bilds mit einem hinterlegten Button für das Popup-->
+                        <img src="Bilder/hund1.png" alt="Buster" title="Buster - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+                <!-- pop up fenster verknüpft über die id Modal1-->
+                <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- Überschrift im pop up-->
+                                <h5 class="modal-title" id="ModalLabel">Buster</h5>
+                                <!-- Button fr das schließen kreuz oben rechts am fenster-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!-- Haupttext des Pop up fensters-->
+                            <div class="modal-body">
+                                Mitte August erhielten wir einen Anruf, dass ein 9 jähriger Hund wegen Umzug abgegeben werden sollte. Wir sagten seine Aufnahme zu und so brachte man ihn uns am 17.08.18. Bei Aufnahme der Daten stellte sich allerdings heraus, dass der Rüde, den man seit Welpenalter hatte, nicht 9 sondern 12 Jahre alt ist. Wenn nun einer glaubt die Menschen, die Buster abgaben wären geknickt oder gar traurig gewesen, der täuscht sich. Es herrschte eine ganz saloppe Atmosphäre und verabschiedete sich mit den Worten: "Dann mache es mal gut, Buster!"
+                            </div>
+                            <div class="modal-footer">
+                                <!-- schließen button im fenster-->
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter katzen">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal2">
+                        <img src="Bilder/katze1.png" alt="Spencer" title="Spencer - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+
+                <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Spencer</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Spencer ist ein schüchterner kleiner Kater und versteckt sich noch sehr viel. Wenn man aber einfach ruhig sitzen bleibt, lässt er sich relativ schnell blicken, denn im Grunde ist er unheimlich neugierig. Mit Artgenossen kommt Spencer super klar.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter hunde">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal3">
+                        <img src="Bilder/hund2.png" alt="Berti" title="Berti - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+
+                <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Berti</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Mischlingsrüde Berti ist am 19.11.15 geboren und wurde am 16.06.18 im Tierheim abgegeben, weil sein Frauchen mit ihm überfordert war und Berti wohl auch mit der Familie. Berti war stark auf sein Frauchen fixiert und kam immer weniger mit den Kindern klar. Man merkt Berti an, dass er recht unsicher ist und Halt bei einer Bezugsperson sucht. Bei fremden Personen braucht er etwas Zeit um Vertrauen zu fassen. Berti neigt dazu Resourcen - besonders Plätze wie seinen Schlafplatz - zu verteidigen. Je vertrauter jedoch ihm eine Person ist, desto eher duldet er es, wenn diese sich einem "verbotenen" Platz nähert.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter ziegen">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal4">
+                        <img src="Bilder/ziege1.png" alt="BIOS" title="BIOS - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+
+                <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">BIOS</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                BIOS ist eine lebensfrohe Ziege die sich hervorragend für einen gemütlichen Abend auf der Couch eignet. Durch Ihr sanftes Wesen und Ihre umgängliche Art ist sie sowohl für Familien als auch für alleinstehende der perfekte Abendliche Couchbegleiter. BIOS kommt aus einer schlechten Zirkushaltung und hat daher bereits viele traumatische Erlebnisse zu verarbeiten, was Ihrem sanften Charakter und Ihrer einfühlsamen Art keinen Abbruch getan hat.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter nagetiere">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal5">
+                        <img src="Bilder/nagetier1.png" alt="Quintus" title="Quintus - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+
+
+                <div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Quintus</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Quintus ist ein sehr schüchterner Nager der die fähtigkeit besitzt sich in windeseile in ihr Herz zu zaubern, mit diesem kleinen Freund werden Sie (wenn Sie auch sein Herz gewonnen haben) mit sicherheit den ein oder anderen schönen tag verbringen. Wer weis? vielleicht wird das ja eine Partnerschaft für immer?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter ziegen">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal6">
+                        <img src="Bilder/ziege2.png" alt="Simone" title="Simone - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+
+                <div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Simone</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Simone ist das Paradebeispiel für eine verschmuste und vertrauenswürdige Ziege mit der sich jeder Ziegenliebhaber Glücklich schätzen kann. Zudem ist sie Kinderlieb, Seniorenverträglich und macht nicht wegen jeder kleinigkeit ein riesen Theater. Rundum pflegeleicht also! Wenn Sie auf der Suche nach der idealen Ziege sind dann melden sie sich gerne bei und für ein Probeschmusen mit Simone!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter nagetiere">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal7">
+                        <img src="Bilder/nagetier2.png" alt="Ludwig" title="Ludwig - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+
+                <div class="modal fade" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Ludwig</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Ludwig, zu viele Wort um dieses einzigartige Kerlchen zu beschreiben! Sie sind auf der Suche nach dem ausergewöhnlichen? stellen sich gerne neuen Herausforderungen und sind bereit Ihr Leben voll und ganz einem anderen Wesen unterzuordnen? dann melden sie sich doch für Ludwig! er ist ein Garant für unterhaltssame Nachmittage, ihre Freunde werden staunen!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter ziegen">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal8">
+                        <img src="Bilder/ziege3.png" alt="Ritschi" title="Ritschi - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+
+                <div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Ritschi</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Ritschi ist in seiner nun vertrauten Umgebung total souverän und selbstsicher geworden. Besonders wenn es um leckeres Futter geht, ist Ritschi immer als Erster zur Stelle. Er ist auch unheimlich verspielt und unternehmungslustig. Die Neugierde lässt ihn auch schon mal jede Vorsicht vergessen, denn leichte Zurückhaltung legt er immer noch an den Tag.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter hunde">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal9">
+                        <img src="Bilder/hund3.png" alt="Hagrid" title="Hagrid - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+
+                <div class="modal fade" id="Modal9" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Hagrid</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Sie sind auf der suche nach einem neuen Hund? stellen sich gerne neuen Herausforderungen! Hagrid wartet bereits auf Sie und ist bereit in sein neues zu Hause einzuziehen!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter nagetiere">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal10">
+                        <img src="Bilder/nagetier3.png" alt="Freddi" title="Freddi - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+                <div class="modal fade" id="Modal10" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Freddi</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Freddi sucht wieder Anschluss... Ihr kumpel ist leider verstorben und sie möchte ihren Lebensabend nicht alleine verbringen. Freddi sucht einen Kumpel, der auch schon im Seniorenalter ist. Sie ist 8 Jahre alt und sterilisiert.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter katzen">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal11">
+                        <img src="Bilder/katze2.png" alt="Tolkien" title="Tolkien - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+                <div class="modal fade" id="Modal10" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Freddi</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Freddi sucht wieder Anschluss... Ihr kumpel ist leider verstorben und sie möchte ihren Lebensabend nicht alleine verbringen. Freddi sucht einen Kumpel, der auch schon im Seniorenalter ist. Sie ist 8 Jahre alt und sterilisiert.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="galerieFeld col-lg-4 col-md-6 col-sm-6 col-xs-6 filter katzen">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#Modal11">
+                        <img src="Bilder/katze3.png" alt="Samson" title="Samson - klicken für mehr Infos" />
+                    </button>
+                </div>
+
+                <div class="modal fade" id="Modal11" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalLabel">Samson</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Schließen">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Samson ist ein wahrer Schmusekater und zeigt unserem Team Tag für Tag wie das verhalten einer Würdevollen Katze funktioniert. Er ist für jeden Spaß zu haben und wird (hoffentlich) bald auch Ihr Leben bereichern!
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="linkBtn" onClick="parent.location='form.html'" data-dismiss="modal">Kontaktformular</button>
+                                <button type="button" class="btnClose" data-dismiss="modal">Schließen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="titel col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p class="galerieTitel"> Wir freuen uns auf Ihre Nachricht!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+            <hr/>
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-4">
+                           <ul>
+                               <li class="bold">
+                                   <a>Spenden</a>
+                               </li>
+                               <li>
+                                   <a> <u>Spendenkonto:</u></a>
+                               </li>
+                               <li>
+                                   <a> Musterbank Musterhausen </a></br>
+                                   <a> IBAN DE11 2222 3333 4444 5555 66 </a>
+                               </li>
+                               <li>
+                                   <a> <u>Spenden über Paypal:</u></a> </br>
+                                   <input value="Spenden" onclick="popup=window.open('https://www.paypal.com/de/home')" type="button" id="donate"/>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="col-md-4">
+                         <ul>
+                             <li class="bold">
+                                 <a>Anfahrt</a>
+                             </li>
+                             <li>
+                                 <a> Tierheim BIOS Musterhausen </a> </br>
+                                 <a> Musterstraße 1 </a></br>
+                                 <a> 12345 Musterstadt </a>
+                             </li>
+                             <li>
+                                 <a href="https://www.google.com/maps/place/Stadtwerke+Musterstadt/@50.9861834,6.8884554,17z/data=!3m1!4b1!4m5!3m4!1s0x47bf30055a956aeb:0x157e75aff56dd5fc!8m2!3d50.98618!4d6.8906441"><u>Link zu Google Maps</u> </a>
+                             </li>
+                         </ul>
+                       </div>
+                       <div class="col-md-4">
+                           <ul>
+                               <li class="bold">
+                                   <a>Infos</a>
+                               </li>
+                               <li>
+                                   <a><u>Öffnungszeiten:</u></a> </br>
+                                   <a> Montag bis Freitag: 13:30-17:30 Uhr </br>
+                                       Samstag: 10:00-12:00 Uhr</br>
+                                       Sonntag und an Feiertagen geschlossen!
+                                   </a>
+                               </li>
+                               <li>
+                                   <a><u>Gassigeh und Kuschelzeiten :</u></a> </br>
+                                   <a> Montag bis Freitag: 11:30-18:30 Uhr </br>
+                                       Samstag: 10:00-18:00 Uhr</br>
+                                   </a>
+                               </li>
+                           </ul>
+                       </div>
+                   <div class="row">
+                       <div class="col">
+                         © Tierheim BIOS
+                       </div>
+                 </div>
+               </div>
+             </div>
+     </footer>
+</body>
+</html>

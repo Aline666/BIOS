@@ -1,0 +1,114 @@
+.galerieFeld
+{
+    margin-bottom: 15px;
+}
+
+.galerieTitel
+{
+    font-size: 36px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: green;
+}
+
+.filter-button
+{
+    font-size: 18px;
+    color: white;
+    background-color: darkgrey;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+.btnClose
+{
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.linkBtn
+{
+    padding: 5px;
+    background-color: #147704;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.filter-button-active
+{
+    background-color: green;
+}
+
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    color: #ffffff;
+    background-color: #42B32F;
+}
+
+.ButtonBlock > .btn
+{
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 0;
+}
+
+/**Standardeinstellung zurücksetzen**/
+.btn
+{
+    padding: 0;
+}
+
+.titel
+{
+    padding: 0;
+    margin: 0;
+}
+
+.textBlock {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.platzhalter {}
+
+h5
+{
+    font-family: 'Indie Flower', cursive;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+/**Button um wieder an den Seitenanfang zu gelangen **/
+#toTop
+{
+    position: fixed;
+    background-color: #42B32F;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    display: none;
+}
+
+#donate{
+    margin-top: 0.5em;
+    width: auto;
+
+    background-color: #147704;
+    color: white;
+    font-weight: bold;
+
+    transition: background-color 0.2s;
+}
+
+#donate:hover{
+    background-color: #289716;
+}
