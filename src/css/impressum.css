@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+
+}
+body, a, a:visited {
+    color: grey;
+}
+
+
+a:hover {
+    color: darkgrey;
+    text-decoration: underline;
+}
+/*Überschriften*/
+
+h1{
+  color: grey;
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+
+}
+
+h2{
+color: grey;
+font-size: 18pt;
+font-weight: lighter;
+
+}
+
+h3 {
+    font-size: 15pt;
+    color: grey;
+    text-decoration: underline;
+}
+
+
+h4{
+color:grey;
+font-size: 12pt;
+}
+
+
+
+
+/*Sidebar*/
+
+.sidebar {
+  background-color: hsla(120, 60%, 70%, 0.1);
+  border-radius: 10px;
+}
+
+.jobtext{
+font-size: 12pt;
+border: 0px solid grey;
+border-top-width: 1px;
+}
+
+
+.spendentext{
+font-style: oblique;
+font-size: 28pt;
+font-family: 'Amatic SC', cursive;
+
+
+}
+
+#paypal {
+    margin-left: 1.5em;
+    border-radius: 10px;
+    width: 4em;
+}
+
+#paypal:hover{
+width: 4.5em;
+
+}
+
+.fb-text{
+  font-size: 10pt;
+
+}
+
+#facebook{
+  margin-left: 3em;
+  border-radius: 10px;
+  width: 2em;
+
+}
+
+#facebook:hover{
+width: 2.5em
+
+
+}
+
+/*Imperssum*/
+
+.impressum{
+
+text-align: center;
+
+}
