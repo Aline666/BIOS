@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    
+
 }
 
 
@@ -116,6 +116,54 @@ width: 4.5em;
 width: 2.5em
 }
 
+@media only screen and (max-width: 980px){
+
+  .jobtext{
+  font-size: 10pt;
+  border: 0px solid grey;
+  border-top-width: 1px;
+  }
+
+
+  .spendentext{
+  font-style: oblique;
+  font-size: 18pt;
+  font-family: 'Amatic SC', cursive;
+
+  }
+
+  #paypal {
+      margin-left: 0.5em;
+      border-radius: 10px;
+      width: 4em;
+  }
+
+  #paypal:hover {
+  width: 4.5em;
+  }
+
+  .fb-text{
+    font-size: 10pt;
+  }
+
+  #facebook{
+    margin-left: 1em;
+    border-radius: 10px;
+    width: 2em;
+
+  }
+
+  #facebook:hover{
+  width: 2.5em
+  }
+
+
+
+
+
+}
+
+
 /*Einzelvorstellung*/
 
 * {
@@ -189,6 +237,10 @@ font-weight: bold;
 .btn:hover{
   background-color: lightgrey;
 }
+.btn:active{
+
+  background-color: lightgrey;
+}
 
 .Menschen{
 margin-left: 1em;
@@ -205,20 +257,14 @@ text-align: center;
 }
 
 /*Media Query für die Einzelvorstellung*/
-@media only screen and (max-width: 600px){
-  * {
-      box-sizing: border-box;
-  }
+@media only screen and (max-width: 980px){
+
 
   .row {
       margin: 5px -10px;
   }
 
 
-  .row,
-  .row > .column {
-      padding: 8px;
-  }
 
   .column {
       float: left;
@@ -227,6 +273,7 @@ text-align: center;
       border: 0.2px solid grey;
       border-radius: 10px;
       margin:0.2em;
+      height: 18em;
 
 
   }
@@ -242,7 +289,7 @@ text-align: center;
 
   .content {
       background-color: white;
-      padding: 10px;
+
 
   }
   .content img{
@@ -256,6 +303,7 @@ text-align: center;
 
   .show {
       display: block;
+
   }
 
   .btn {

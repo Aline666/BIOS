@@ -47,7 +47,7 @@ function w3AddClass(element, name) {
   }
 }
 
-// Die nicht ausgewählten Klassen werden nicht angezeigt 
+// Die nicht ausgewählten Klassen werden nicht angezeigt
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -70,26 +70,3 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
-/*Browser und Server beinhalten je einen Teil der Anwendungslogik
-•	Der HTML-Code der Seite kann zur Laufzeit generiert werden oder in einer einfachen HTML-Datei liegen
-•	Bei verschiedenen Aktionen werden mit JavaScript weitere Daten mit dem Server ausgetauscht
-•	Die empfangenen Daten werden dabei durch geschickte DOM-Manipulation sichtbar gemacht
-*/
-
-/*Vorteil dieses Ansatzes ist, dass die serverseitigen Funktionen aus
-unterschiedlichen Frontends heraus konsumiert werden können, beispielsweise
-einer Webseite und einer Desktopanwendung. Auch kann eine so entwickelte
-Webanwendung längere Offlinezeiten überstehen, solange sie keine Verbindung zum
-Server benötigt. */
-
-/*•	PHP: Der Vorreiter aller aktiven Serverseiten und das einzige Produkt, dessen Abkürzung keine „Server Pages“ enthält. PHP stand ursprünglich für „Personal Homepage Processor”.
-•	JSP: Java Server Pages, also die Javavariante aktiver Serverseiten
-*/
-
-/*Was der Server bei einer Anfrage macht
-Jeder Aufruf führt zur Auswahl von genau einer URL-Route, die wiederum den
-so genannten Request Handler benennt, der die Anfrage übergeben bekommt.
-Je nach Programmiersprache und Framework handelt es sich dabei entweder um
-eine Klasse (wie in Java, wo diese Klasse Servlet genannt wird), eine Methode
-oder eine Funktion.*/
